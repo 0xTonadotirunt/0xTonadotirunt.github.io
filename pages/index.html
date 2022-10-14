@@ -8,26 +8,16 @@
 
     <!-- test -->
     <!-- Bootstrap CSS CDN -->
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-      crossorigin="anonymous"
     />
 
     <!-- Font Awesome JS -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+    <script src="https://use.fontawesome.com/71a32646ac.js"></script>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script
@@ -47,105 +37,140 @@
       integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
       crossorigin="anonymous"
     ></script>
-    <!-- test -->
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Vue -->
 
     <link rel="stylesheet" href="../resources/index.css" />
   </head>
+
   <body id="body-pd">
-    <div class="wrapper" id="body">
-      <nav id="sidebar">
-        <div class="sidebar-header">
-          <h3>Bootstrap Sidebar</h3>
-        </div>
+    <div class="app">
+      <div class="wrapper" id="body">
+        <nav id="sidebar">
+          <div class="sidebar-header">
+            <h3>Portfolio Website</h3>
+          </div>
 
-        <ul class="list-unstyled components">
-          <p>Dummy Heading</p>
-          <li class="active">
-            <a
-              href="#homeSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-              >Home</a
-            >
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li>
-                <a href="#">Home 1</a>
-              </li>
-              <li>
-                <a href="#">Home 2</a>
-              </li>
-              <li>
-                <a href="#">Home 3</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a
-              href="#pageSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-              >Pages</a
-            >
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li>
-                <a href="#">Page 1</a>
-              </li>
-              <li>
-                <a href="#">Page 2</a>
-              </li>
-              <li>
-                <a href="#">Page 3</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+          <ul class="list-unstyled components">
+            <p>Contents</p>
+            <li class="active">
+              <!-- home -->
+              <a
+                href="#homeSubmenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                >Home</a
+              >
+            </li>
+            <!-- home -->
+            <!-- about -->
 
-        <ul class="list-unstyled CTAs">
-          <li>
-            <a
-              href="https://bootstrapious.com/tutorial/files/sidebar.zip"
-              class="download"
-              >Download source</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://bootstrapious.com/p/bootstrap-sidebar"
-              class="article"
-              >Back to article</a
-            >
-          </li>
-        </ul>
-      </nav>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <!-- about -->
+            <!-- pages -->
+            <li>
+              <a
+                href="#pageSubmenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                >Pages</a
+              >
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                  <a href="#">Page 1</a>
+                </li>
+                <li>
+                  <a href="#">Page 2</a>
+                </li>
+                <li>
+                  <a href="#">Page 3</a>
+                </li>
+              </ul>
+            </li>
+            <!-- pages -->
+            <!-- portfolio -->
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <!-- portfolio -->
+            <!-- contact -->
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <!-- contact -->
+          </ul>
 
-      <div id="content">
-        <button type="button" id="sidebarCollapse" class="btn btn-info">
-          <i class="fas fa-align-left"></i>
-          <span>Toggle Sidebar</span>
-        </button>
+          <!-- <ul class="list-unstyled CTAs">
+            <li>
+              <a
+                href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+                class="download"
+                >Download source</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://bootstrapious.com/p/bootstrap-sidebar"
+                class="article"
+                >Back to article</a
+              >
+            </li>
+          </ul> -->
 
-        <div class="row" id="intro">Hi I'm Zhan Rong</div>
-        <div class="row" id="Pages">
-          <div class="col">github</div>
-          <div class="col">linkedin</div>
-          <div class="col">telegram</div>
+          <!-- insert profile photo -->
+          <div class="profile-photo">
+            <img
+              class="img-fluid"
+              src="../resources/images/profile.jpg"
+              alt="profile"
+            />
+          </div>
+        </nav>
+        <div class="container-fluid" id="cover">
+          <div class="container-fluid" id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <span>Toggle Sidebar</span>
+            </button>
+            <div class="row" id="intro">
+              <h1>Hi I'm Zhan Rong</h1>
+            </div>
+            <div class="row" id="pages">
+              <div class="col bg-primary" id="github">
+                <a href="https://github.com/0xTonadotirunt">
+                  <img
+                    class="img-fluid w-25"
+                    src="../resources/images/github.svg"
+                /></a>
+              </div>
+              <div class="col bg-primary" id="linkedin">
+                <a href="https://www.linkedin.com/in/kum-zhan-rong/">
+                  <img
+                    class="img-fluid w-25"
+                    src="../resources/images/linkedin.svg"
+                  />
+                </a>
+              </div>
+              <div class="col bg-primary" id="telegram">
+                <a href="https://t.me/zhanrongg">
+                  <img
+                    class="img-fluid w-25"
+                    src="../resources/images/telegram.svg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- CSS only -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="../resources/index.js"></script>
+      <!-- CSS only -->
+      <!-- JavaScript Bundle with Popper -->
+      <script src="../resources/index.js"></script>
+    </div>
   </body>
 </html>

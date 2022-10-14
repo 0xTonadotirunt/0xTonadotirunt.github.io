@@ -3,6 +3,7 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
 body {
   font-family: "Poppins", sans-serif;
   background: #fafafa;
@@ -37,7 +38,7 @@ a:focus {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #7386d5;
+  background: #001000;
   color: #fff;
   transition: all 0.3s;
 }
@@ -48,7 +49,7 @@ a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #6d7fcc;
+  background: purple;
 }
 
 #sidebar ul.components {
@@ -108,15 +109,14 @@ ul.CTAs a {
   margin-bottom: 5px;
 }
 
-a.download {
-  background: #fff;
-  color: #7386d5;
-}
-
-a.article,
-a.article:hover {
-  background: #6d7fcc !important;
-  color: #fff !important;
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  border: 2px purple solid;
+  margin: auto;
 }
 
 /* ---------------------------------------------------
@@ -126,11 +126,57 @@ a.article:hover {
 #content {
   width: 100%;
   padding: 20px;
-  min-height: 100vh;
+
   transition: all 0.3s;
+}
+
+#intro {
+  /* centralise intro and make it big */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#cover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+#body-pd {
   background-image: url("images/background.jpg");
   background-size: cover;
 }
+
+#intro h1 {
+  font-size: 4em;
+  color: white;
+}
+
+#intro {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+
+#pages p {
+  color: white;
+}
+
+#pages div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px white solid;
+  margin: 5px;
+}
+
+#pages {
+  text-align: center;
+}
+
+/* test */
+
+/* test */
 
 /* ---------------------------------------------------
     MEDIAQUERIES
